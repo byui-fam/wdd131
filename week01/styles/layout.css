@@ -1,0 +1,83 @@
+/* General Reset and Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: grid;
+    /* Grid setup: 3 rows - header, main content, footer */
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    /* Optional: Add some margin for layout padding */
+    margin: 0;
+}
+
+/* Header */
+header h1 {
+    background-color: #424b42;
+    color: white;
+    padding: 20px;
+    text-align:left
+}
+
+/* Navigation */
+nav {
+    background-color: black;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 45px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Main Content Area */
+main {
+    display: grid;
+    /* Grid layout with two columns: main content (3 parts) and sidebar (1 part) */
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+/* Section and Aside styles */
+section {
+    background-color: #bab6b6;
+    padding: 20px;
+}
+
+aside {
+    background-color: white;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #424b42;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
