@@ -67,7 +67,6 @@ main {
     border-radius: 10px;
     background-color: white;
     margin: 1rem;
-    max-width: auto;
 }
 
 .card1 h2, .card2 h2{
