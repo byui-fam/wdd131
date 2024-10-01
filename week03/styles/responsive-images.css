@@ -1,0 +1,30 @@
+/* Basic reset to avoid browser-specific default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main element styling for centering and general layout */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Light background to contrast the image */
+}
+
+/* Styling the hero container */
+.hero {
+    width: 100%; /* Full width of the container */
+    max-width: 1500px; /* Max width to keep it from stretching too much on large screens */
+    padding: 20px; /* Padding around the container for spacing */
+    text-align: center; /* Center the content inside the container */
+}
+
+/* Ensure the img retains its aspect ratio while being responsive */
+.hero img {
+    width: 100%; /* Image scales to 100% of the container's width */
+    height: 100%; /* Height adjusts automatically to maintain aspect ratio */
+    object-fit: cover;
+}
