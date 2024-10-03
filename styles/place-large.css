@@ -1,0 +1,81 @@
+/* Large screen styles */
+@media screen and (min-width: 768px) {
+
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        background-color: #f0f0f0;
+    }
+
+    main {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        background: url('../images/hero-large.webp') no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    header {
+        text-align: center;
+        color: white;
+        padding: 20px;
+        font-size: 3rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h1 { 
+        font-size: 2.5rem;
+        color: white;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .data-details {
+        color: green;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        align-self:first baseline;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .weather-details {
+        color: green;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        align-self:last baseline;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .info h2 {
+        background-color: green;
+        color:white;
+    }
+
+    .weather-details h2::after {
+        content: '🌦️';
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+
+    footer {
+        color: white;
+        text-align: center;
+        padding: 10px;
+        background-color: green;
+    }
+
+    footer p {
+        margin: 5px 0;
+    }
+}
