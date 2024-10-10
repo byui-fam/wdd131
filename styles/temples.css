@@ -46,6 +46,7 @@ nav {
  	position: absolute;
 	top: 10px;
 	right: 10px;
+  cursor: pointer;
 }
 
 #menu::before {
@@ -68,6 +69,10 @@ nav {
 	text-align: center;
 	text-decoration: none;
 	color: white;
+}
+
+.navigation.visible a {
+  display: block; 
 }
 
 .navigation a:hover {
