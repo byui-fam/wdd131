@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+main {
+    padding: 2.3rem;
+    background-color: #b5a8a8;
+
+}
+
+header {
+    background-color: #fbbc05; /* secondary color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    color: #fff;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.logo h1 {
+    color: #000;
+    font-size: 3em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: underline;
+    font-size: 1.2em;
+    padding: 10px 45px;
+
+}
+
+.hero {
+    background-color: #1a73e8;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: white;
+}
+
+/* About Section */
+.about-section {
+    background-color: #fbbc05;
+    color: black;
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.about-section h2 {
+    background-color: #1a73e8;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.about-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* History Section */
+.history {
+    padding: 40px;
+    margin-bottom: 20px;
+    background-color: #1a73e8;
+    color: #000;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.history h2 {
+    background-color: #fbbc05;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.history p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Team Section */
+.our-team {
+    background-color:#fbbc05;
+    margin-bottom: 20px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.our-team h2 {
+    background-color: #1a73e8;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.our-team .employee-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the spacing between employee cards */
+}
+
+.our-team .employee {
+    flex: 1 1 200px; /* Flex-grow: 1, Flex-shrink: 1, and Flex-basis: 200px */
+    max-width: 250px; /* Optional: Set a maximum width for employee cards */
+    text-align: center;
+}
+
+.our-team .employee img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+}
+
+.our-team .employee p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/*Gallery section*/
+.gallery {
+    background-color: #fbbc05;
+    color: black;
+    border-radius: 10px;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.gallery-container{
+    background-color:#1a73e8;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.gallery-container figure {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact-us {
+    background-color: #fbbc05;
+    padding: 40px;
+    margin-bottom: 20px;
+    display: block;
+    
+}
+
+.contact-us h2 {
+    text-align: center;
+}
+
+.information {
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.map {
+    width: 100%; /* Make the map container full-width */
+    max-width: 600px; /* Set a maximum width for larger screens */
+    height: 450px; /* Define the height of the map */
+    margin: 0 auto; /* Center the map container */
+    border: 2px solid #ccc; /* Add a border around the map */
+    border-radius: 10px; /* Add rounded corners */
+    overflow: hidden; /* Hide any overflow outside the rounded borders */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for better aesthetics */
+}
+
+.map iframe {
+    width: 100%; /* Ensure the iframe takes up the entire width of the container */
+    height: 100%; /* Ensure the iframe takes up the entire height of the container */
+    border: 0; /* Remove any default border from the iframe */
+}
+
+.contact-form {
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-around; /* Centers the rating section horizontally */
+    gap: 20px; /* Space between each star-radio pair */
+}
+
+.star-item {
+    display: flex;
+    flex-direction: column; /* Align radio button under the star */
+    align-items: center; /* Center the star and the radio button horizontally */
+}
+
+.star-item input[type="radio"] {
+    margin-top: 10px; /* Add space between the star and the radio button */
+}
+
+.star-item label {
+    font-size: 2rem; /* Adjust the size of the stars */
+    color: #ccc; /* Default color for the stars */
+    cursor: pointer;
+}
+
+.star-item input[type="radio"]:checked + label {
+    color: #f0a500; /* Color when the radio is selected */
+}
+
+.star-item label:hover,
+.star-item label:hover ~ label {
+    color: #f0a500; /* Change star color on hover */
+}
+
+.purpose {
+    padding-bottom: 10px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column; /* Stack the checkboxes vertically */
+    gap: 10px; /* Space between each checkbox-label pair */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center; /* Align the checkbox and label on the same line */
+}
+
+.feature-item input[type="checkbox"] {
+    margin-right: 10px; /* Add space between the checkbox and the label */
+}
+
+label {
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the label */
+}
+
+
+.features label {
+    margin-left: 1px;
+}
+
+input[type="submit"],
+button[type="submit"] {
+    background-color:#1a73e8;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background-color: #6a6a9d;
+}
+
+footer {
+    background-color: #fbbc05;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: black;
+}
+
+footer nav a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #1a73e8;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        color: black;
+    }
+
+    #menu {
+        display: block; /* Show hamburger on mobile */
+    }
+
+    .nav-link {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #fbbc05;
+        padding: 1em;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    .nav-link.show {
+        display: flex;
+    }
+
+    .nav-link li a {
+        padding: 10px 0;
+        font-size: 1.5em;
+        color: black;
+    }
+
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+         position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    
+    #menu::before {
+        content: "☰";
+    }
+    
+    #menu.open::before {
+        content: "❎";
+    }
+
+    .nav-link .visible a {
+        display: block; 
+      }
+
+    .hero h2 {
+        font-size: 3em;
+    }
+
+    .hero p {
+        font-size: 1.5em;
+    }
+
+    .about-section h2,
+    .history h2, .our-team h2 {
+        font-size: 1.5em;
+    }
+
+    .about-section p,
+    .history p {
+        font-size: 1em;
+    }
+
+    .our-team {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .our-team .employee-container {
+        display: block;
+    }
+
+    .our-team .employee {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-team .employee img {
+        max-width: 100%; /* Adjusts the width for smaller screens */
+        height: auto;
+    }
+
+    .gallery-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .gallery figure {
+        width: 100%; /* Make each gallery item stack and take full width */
+    }
+    
+    .map iframe {
+        height: 300px;
+    }
+    
+}
+
+main {
+    padding: 15px;
+    width: 100%;
+    margin: 10px auto;
+}
+
+@media (max-width: 768px) {
+    .map {
+        width: 100%; /* Full width for smaller screens */
+        height: 300px; /* Reduce the height for better display on mobile devices */
+        max-width: 100%; /* No limit on the width for smaller screens */
+        margin: 10px auto; /* Add some space around the map */
+    }
+
+    .map iframe {
+        width: 100%; /* Ensure iframe also adjusts with container */
+        height: 100%; /* Ensure the iframe height matches the container */
+    }
+}
+
+
+.features {
+    grid-template-columns: 1fr;
+}
+
+input[type="submit"],
+button[type="submit"] {
+    padding: 10px;
+}

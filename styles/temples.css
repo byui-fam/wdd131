@@ -81,6 +81,22 @@ nav {
 	font-weight: 700;
 }
 
+.adventures {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.adventures figure {
+  text-align: center;
+}
+
+.adventures img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
 figure {
   background-color: white;
   padding: 10px;

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omoade Sneakers and More Store</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Abiodun Mamiyaa Fadip -  Building a Temple Album">
+    <meta name="author" content="Abiodun Fadipe">
+    <link rel="stylesheet" href="styles/omoade.css">
+    <script src="scripts/omoade.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/logo(1).png" alt="OSM" width="200">
+            <h1>EOSM</h1>
+        </div>
+        <button id="menu"></button>
+        <nav>
+            <ul class="nav-link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section class="contact-us">
+        <div class="information">
+                <h2>COMPANY'S INFORMATION</h2>               
+                <p>Eleazar Omoade Sneakers & more</p>
+                <p>Address: 10. Abiodun St,Ile-Ife</p>
+                <p>Phone: +234-8134019345, +234-80670331</p>
+                <p>Email: <a href="mailto:">adeabbey212@gmail.com, adebowaletunde15@gmail.com</a></p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.658471149768!2d4.575882573657638!3d7.502904011010506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10383b0025cf08e9%3A0x6c80d15851d1e33f!2sEleazar%20Omoade%20sneakers%20and%20more!5e0!3m2!1sen!2sng!4v1721067432122!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+        
+    <section class="contact-form">
+        <h2>Contact Form</h2>
+            <form action="review.html" method="get">
+                <label>Overall Rating</label>
+            <div class="rating">
+                <div class="star-item">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">☆☆☆☆☆</label>
+                </div>
+            
+                <div class="star-item">
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">☆☆☆☆</label>
+                </div>
+            
+                <div class="star-item">
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">☆☆☆</label>
+                </div>
+            
+                <div class="star-item">
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">☆☆</label>
+                </div>
+            
+                <div class="star-item">
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">☆</label>
+                </div>
+            </div>
+            
+            <div class="form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="phone">Phone Number: (Optional)</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>    
+
+            <fieldset>
+                <div class="purpose">
+                    <label>Purpose of Message. (Check all that apply)</label>
+                </div>
+                <div class="features">
+                    <div class="feature-item">
+                        <input type="checkbox" id="general-inquiry" name="features" value="general-inquiry">
+                        <label for="general-inquiry">General Inquiry</label>
+                    </div>
+            
+                    <div class="feature-item">
+                        <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">
+                        <label for="ease-of-use">Ease of Use</label>
+                    </div>
+            
+                    <div class="feature-item">
+                        <input type="checkbox" id="performance" name="features" value="performance">
+                        <label for="performance">Performance</label>
+                    </div>
+            
+                    <div class="feature-item">
+                        <input type="checkbox" id="design" name="features" value="design">
+                        <label for="design">Design</label>
+                    </div>
+                </div>
+            </fieldset>
+            
+             
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                                        
+                <button type="submit">Submit</button>
+            
+
+            </form>      
+    </section>
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span>  &#129344; Eleazar Omoade Sneakers & more  &#129344; Nigeria</p>
+    <p>Last modified: <span id="last-modified"></span>.</p>
+    <nav>
+        <a href="https://facebook.com">
+            <img src="images/1_Facebook_colored_svg_copy-64.webp" alt="Facebook">
+        </a>
+        <a href="https://twitter.com">
+            <img src="images/1_Twitter3_colored_svg-64.webp" alt="Twitter">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagram_icon-instagram_buttoninstegram-64.webp" alt="Instagram">
+        </a>
+        <a href="https://linkedin.com">
+            <img src="images/1_Linkedin_unofficial_colored_svg-64.webp" alt="Linkedin">
+        </a>
+        <a href="https://telegram.com">
+            <img src="images/telegram-64.webp" alt="Telegram">
+        </a>
+    </nav>
+</footer>
+
+</body>
+</html>
